@@ -11,12 +11,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+'use strict';
+
 // [START all]
 var http = require('http');
 var handleRequest = function(request, response) {
     response.writeHead(200);
-    response.end("Hello Kubernetes!");
-}
+    response.end('Hello Kubernetes!');
+};
 var www = http.createServer(handleRequest);
 www.listen(8080);
 // [END all]
